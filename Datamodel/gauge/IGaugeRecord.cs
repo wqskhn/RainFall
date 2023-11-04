@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RainFallUI.Datamodel.gauge
 {
-    public interface IGauge
+    public interface IGaugeRecord
     {
-        public int DeviceID { get; set; }
+        public string DeviceID { get; set; }
         public string DeviceName { get; set; }
         public string Location { get; set; }
     }

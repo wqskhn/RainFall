@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RainFallUI.Datamodel.data
 {
-    public interface IData
+    public interface IDataRecord
     {
         public int DeviceID { get; set; }
         public DateTime Time { get; set; }
