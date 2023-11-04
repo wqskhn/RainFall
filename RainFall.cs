@@ -1,4 +1,5 @@
 using RainFallUI.parser.csv;
+using RainFallUI.service.average;
 
 namespace RainFall
 {
@@ -36,13 +37,17 @@ namespace RainFall
                 return;
             }
 
-            var a =  new CSVParser();
+            var parse = new CSVParser();
             // Validate needed before passing to Parse or change parser to Generic 
-            a.ParseCSV( textDeviceFilePath.Text, textDataFilePath.Text);
-            var datarecords = a.DataRecords;
-            var guageRecords = a.GaugeRecords;
+            parse.ParseCSV(textDeviceFilePath.Text, textDataFilePath.Text);
+            var datarecords = parse.DataRecords;
+            var guageRecords = parse.GaugeRecords;
+            var calculationAvg = new RainFallFourHrs();
+            var result = calculationAvg.FourHrsAverageCalculation(datarecords);
 
-
+            //check for color
+            // display to screen 
+          
         }
     }
 }
