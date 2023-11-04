@@ -1,16 +1,12 @@
 # RainFall
+    Execute the RainFallUI file to initiate the application.
 
-Run the file RainFallUI
+    The application is being modularized into components to facilitate unit testing.
 
-// Application is being divided into components so it could be unit test (means unit test should be return)
+    Please upload both the device and data files.
 
-Upload both file device and data file
+    While the data is not currently stored in a database, it can be easily achieved by extending the data model class.
 
-Data is not being stored in data base but it could be easily stored into the data base by extending the datamodel class
+Note: While dealing with the CSV parser, initial parsing issues might have arisen due to Windows access and data-related problems (?). However, the issue has been resolved, and it is now functioning properly.
 
-Note:
-due to stuck with CSV Parser not sure it not properly parse at first few time due to window access and data issue(?) 
-but it work now.
-
-only thing is left the color and display part 
-and unit test could be added.
+The pending tasks include implementing the color and display functionalities. Additionally, there is room for adding unit tests.
